@@ -1,5 +1,12 @@
 Ext.define('MyModernApp.model.Cliente',{
     extend: 'Ext.data.Model',
+    proxy: {
+        type: 'localstorage',
+        id: 'clientes'
+    },
+    requires: [
+        'Ext.data.proxy.LocalStorage'
+    ],
     idProperty: 'id',
     fields:[{
         name: 'id',
