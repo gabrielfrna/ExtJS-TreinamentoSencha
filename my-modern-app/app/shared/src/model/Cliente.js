@@ -1,7 +1,7 @@
 Ext.define('MyModernApp.model.Cliente',{
     extend: 'Ext.data.Model',
     requires: [
-        'Ext.data.proxy.LocalStorage',
+        //'Ext.data.proxy.LocalStorage',
         'Ext.data.proxy.Rest'
     ],
     /*
