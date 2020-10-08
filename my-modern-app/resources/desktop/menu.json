@@ -1,0 +1,16 @@
+{
+    "leaf": false,
+    "children": [
+        { "text": "Home", "iconCls": "x-fa fa-home", "xtype": "homeview", "leaf": true },
+        { "text": "Personnel", "iconCls": "x-fa fa-table", "xtype": "personnelview", "leaf": true },
+        { "text": "Anchor Layout", "iconCls": "x-fa fa-home", "xtype": "anchor_layout", "leaf": true },
+        { "text": "Absolute Layout", "iconCls": "x-fa fa-home", "xtype": "absolute_layout", "leaf": true },
+        { "text": "Fit Layout", "iconCls": "x-fa fa-home", "xtype": "fit_layout", "leaf": true },
+        { "text": "Center Layout", "iconCls": "x-fa fa-home", "xtype": "center_layout", "leaf": true },
+        { "text": "Accordion Layout", "iconCls": "x-fa fa-home", "xtype": "accordion_layout", "leaf": true },
+        { "text": "Card Layout", "iconCls": "x-fa fa-home", "xtype": "card_layout", "leaf": true },
+        { "text": "Form Layout", "iconCls": "x-fa fa-home", "xtype": "form_layout", "leaf": true },
+        { "text": "HBox Layout", "iconCls": "x-fa fa-home", "xtype": "hbox_layout", "leaf": true },
+        { "text": "VBox Layout", "iconCls": "x-fa fa-home", "xtype": "vbox_layout", "leaf": true }
+    ]
+}
