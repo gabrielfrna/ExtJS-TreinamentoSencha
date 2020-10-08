@@ -1,12 +1,26 @@
 Ext.define('MyModernApp.model.Cliente',{
     extend: 'Ext.data.Model',
+    requires: [
+        'Ext.data.proxy.LocalStorage',
+        'Ext.data.proxy.Rest'
+    ],
+    /*
     proxy: {
         type: 'localstorage',
         id: 'clientes'
     },
-    requires: [
-        'Ext.data.proxy.LocalStorage'
-    ],
+    */
+    proxy: {
+        type: 'rest',
+        url: 'http://localhost:3333/api/v1/clientes',
+        writer: {
+            type: 'json'
+        },
+        reader: {
+            type: 'json',
+            rootProperty: 'data'
+        }
+    },
     idProperty: 'id',
     fields:[{
         name: 'id',
