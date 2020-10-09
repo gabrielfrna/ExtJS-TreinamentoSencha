@@ -8,6 +8,15 @@ Ext.define('MyModernApp.view.ClienteGrid',{
         autoLoad: true
     },
 
+    listeners: {
+        childdoubletap: function(grid, location, eOpts) {
+            Ext.Msg.alert('Teste', 'Você clicou duas vezes no cliente ' + location.record.get('nome'));
+        },
+        columnresize: function(gid, column, width, eOpts) {
+            console.log('A nova largura da coluna ' + column.getText() + ' é ' + width);
+        }
+    },
+
     columns:[{
         text: 'ID',
         width: 60,
