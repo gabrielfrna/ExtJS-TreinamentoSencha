@@ -41,14 +41,32 @@ Ext.define('MyModernApp.model.Cliente',{
         type: 'string'
     },{
         name: 'data_nascimento',
-        type: 'date'
+        type: 'date',
+        dateFormat: 'Y-m-d'
     },{
         name: 'ativo',
         type: 'boolean',
         defaultValue: true
     },{
-        name: 'peso',
+        name: 'renda',
         type: 'float',
         allowNull: true
+    }, {
+        name: 'sexo',
+        type: 'string',
+        validators: [{
+            type: 'presence'
+        }, {
+            type: 'inclusion',
+            list: ['Masculino', 'Feminino']
+        }]
+
+    },{
+        name: 'created_at',
+        type: 'date',
+        dateFormat: 'Y-m-d H:i:s'
+    },{
+        name: 'observacao',
+        type: 'string'
     }]
 });
