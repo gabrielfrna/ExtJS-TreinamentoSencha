@@ -5,11 +5,40 @@ Ext.define('MyModernApp.view.componentes.Toolbar',{
     items:[{
         xtype: 'button',
         text: 'Novo',
-        iconCls: 'x-fa fa-plus'
+        reference: 'btnNovo',
+        iconCls: 'x-fa fa-plus',
+        listeners: {
+            tap: 'onNovoButtonTap'
+        }
     },{
         xtype: 'button',
         text: 'Editar',
         iconCls: 'x-fa fa-edit'
+    },{
+        xtype: 'button',
+        text: 'Remover',
+        iconCls: 'x-fa fa-trash',
+        listeners: {
+            tap: 'onRemoverButtonTap'
+        }
+    },{
+        xtype: 'numberfield',
+        label: 'X',
+        bind: {
+            value: '{x}'
+        }
+    },{
+        xtype: 'numberfield',
+        label: 'Y',
+        bind: {
+            value: '{y}'
+        }
+    },{
+        xtype: 'textfield',
+        label: 'Título',
+        bind: {
+            value: '{textoTeste}'
+        }
     },{
         xtype: 'spacer',
         flex: 1
@@ -30,6 +59,9 @@ Ext.define('MyModernApp.view.componentes.Toolbar',{
     },{
         xtype: 'button',
         iconCls: 'x-fa fa-bell',
-        badgeText: 9
+        handler: 'onNotification',
+        bind: {
+            badgeText: '{notificacoes}'
+        }
     }]
 })

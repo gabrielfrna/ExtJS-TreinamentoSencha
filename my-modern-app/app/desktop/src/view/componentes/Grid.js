@@ -1,11 +1,20 @@
-Ext.define('MyModernApp.view.compenentes.Grid',{
+Ext.define('MyModernApp.view.componentes.Grid',{
     extend: 'Ext.grid.Grid',
     alias: 'widget.mygrid',
-    title: 'My Grid Example',
-    store: {
-        type: 'clientes',
-        pageSize: 25,
-        autoLoad: true
+    controller: 'mygridcontroller',
+    viewModel: {
+        type: 'mygridviewmodel'
+    },
+    //title: 'My Grid Example',
+    //store: {
+    //    type: 'clientes',
+    //    pageSize: 25,
+    //    autoLoad: true
+    //},
+
+    bind: {
+        store: '{clientes}',
+        title: '{textoTeste} - X = {x} Y= {y} - A soma é {soma} - DobroX = {dobroX} - QuadruploX = {quadruploX}'
     },
 
     columns:[{
