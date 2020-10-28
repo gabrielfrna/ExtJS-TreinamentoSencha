@@ -1,7 +1,10 @@
 Ext.define('MyModernApp.Application', {
 	extend: 'Ext.app.Application',
 	name: 'MyModernApp',
-	requires: ['MyModernApp.*'],
+	requires: [
+		'MyModernApp.*',
+		'Ext.Responsive'
+	],
 	defaultToken: 'homeview',
 
 	removeSplash: function () {

@@ -24,6 +24,7 @@ Ext.define('MyModernApp.view.componentes.MainController', {
             layout: 'fit',
             title: 'Exemplo de Grid Panel',
             maximized: true,
+            ui: 'dark-dialog',
             items:{
                 mygrid: {
                     xtype: 'mygrid'

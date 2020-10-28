@@ -1,0 +1,17 @@
+@include button-ui(
+    $ui: 'danger',
+    $background-color: #ae4646,
+    $color: white
+);
+
+@include button-ui(
+    $ui: 'purple',
+    $background-color: #7146ae,
+    $color: white
+);
+
+@include button-ui(
+    $ui: 'warn',
+    $background-color: #ae8446,
+    $color: white
+)
